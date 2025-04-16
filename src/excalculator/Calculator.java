@@ -64,7 +64,7 @@ public class Calculator {
 
 
 
-            } while (ii==1); //푸시가 거부됨
+            } while (ii==1); //푸시가 왜 안될까
 
 
 
