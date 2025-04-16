@@ -64,7 +64,7 @@ public class Calculator {
 
 
 
-            } while (ii==1); //푸시가 왜 안될까 왜왜왜왜
+            } while (ii==1); //푸시 푸시
 
 
 
