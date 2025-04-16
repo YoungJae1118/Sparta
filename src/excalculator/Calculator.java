@@ -64,7 +64,7 @@ public class Calculator {
 
 
 
-            } while (ii==1); //푸시 푸시
+            } while (ii==1); //푸시확인용
 
 
 
