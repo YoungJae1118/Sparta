@@ -38,21 +38,33 @@ public class Calculator {
                     double result = num1 / num2;
                     System.out.println("결과는 " + result);
                 }
+                else {
+                    System.out.println("다시 입력해주세요");
+                }
 
             sc.nextLine();
 
-
-
-            System.out.println("계속하시겠습니까? [Yes or exit]");
-            String str = sc.nextLine();
+            int a=0;
+            while (a==0) {
+                System.out.println("계속하시겠습니까? [Yes or exit]");
+                String str = sc.nextLine();
                 if (str.equals("Yes")) {
-                   ii=1;
-
+                    ii = 1;
+                    a=1;
                 } else if (str.equals("exit")) {
-                    ii=2;
+                    ii = 2;
+                    a=1;
                     System.out.println("종료하겠습니다");
+
+                } else {
+                    System.out.println("다시 입력해주세요");
+                    a =0;
                 }
-            } while (ii==1);
+            }
+
+
+
+            } while (ii==1); //푸시
 
 
 
