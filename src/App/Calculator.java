@@ -51,5 +51,5 @@ public class Calculator {
     // 결과 리스트를 반환하는 메서드 (optional, 결과를 조회하고 싶을 경우
     public ArrayList<Double> getResults() {
         return results;
-    }
+    } //
 }

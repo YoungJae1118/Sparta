@@ -35,11 +35,16 @@ public class Main {
                     ii = 2;
                     a=1;
                     System.out.println("종료하겠습니다");
-
+                    System.out.println("지금까지의 결과는");
+                    for (double result : cc.getResults()) {
+                        System.out.println(result);
+                    }
+                    System.out.println("이상입니다");
                 } else {
                     System.out.println("다시 입력해주세요");
                     a =0;
                 }
+
             }
 
 
