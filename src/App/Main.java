@@ -44,7 +44,7 @@ public class Main {
 
 
 
-        } while (ii==1); //푸시확인용
+        } while (ii==1);
 
 
 
