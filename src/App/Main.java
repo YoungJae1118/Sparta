@@ -19,16 +19,16 @@ public class Main {
             System.out.println("+ , - , * , /");
             char i = sc.next().charAt(0);
 
-             cc.sum(num1,num2,i);
+             cc.calculate(num1,num2,i);
 
 
             sc.nextLine();
 
             int a=0;
             while (a==0) {
-                System.out.println("계속하시겠습니까? [Yes or exit]");
+                System.out.println("계속하시겠습니까? [yes or exit]");
                 String str = sc.nextLine();
-                if (str.equals("Yes")) {
+                if (str.equals("yes")) {
                     ii = 1;
                     a=1;
                 } else if (str.equals("exit")) {
