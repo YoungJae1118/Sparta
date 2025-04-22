@@ -37,19 +37,24 @@ public class Calculator {
             System.out.println("결과는 " + result);
 
         } else {
-            System.out.println("지원하지 않는 연산자입니다.");
-            return 0; // 유효하지 않은 연산자 처리 시 0 반환
+            System.out.println("다시 입력해주세요");
+            return 0;
         }
 
-        // 연산 결과를 results 리스트에 추가
         results.add(result);
 
-        // 계산 결과 반환
+
         return result;
     }
 
-    // 결과 리스트를 반환하는 메서드 (optional, 결과를 조회하고 싶을 경우
     public ArrayList<Double> getResults() {
         return results;
-    } //
+    }
+
+    public void setResults(ArrayList<Double> results) {
+        this.results = results;
+
+
+        }
+
 }
