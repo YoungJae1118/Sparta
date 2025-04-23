@@ -63,7 +63,6 @@ public class Calculator {
         if(str1.equals("yes")){
             results.remove(0);
         }
-
         else if(str1.equals("no")){
         }
         else{

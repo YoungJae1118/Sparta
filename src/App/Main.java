@@ -78,7 +78,7 @@ public class Main {
 
 
 
-
+//data입력시 계산결과 출력되게
 
 
     }
