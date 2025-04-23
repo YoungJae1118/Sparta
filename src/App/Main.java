@@ -21,7 +21,7 @@ public class Main {
             char i = sc.next().charAt(0);
 
              cc.calculate(num1,num2,i);
-
+            System.out.println(cc.getResults());
 
             sc.nextLine();
 
@@ -42,9 +42,6 @@ public class Main {
                     ArrayList<Double> results = cc.getResults();
                     for (double result : results) {
                         System.out.println(result);
-
-
-
                     }
                     System.out.println("이상입니다");
                 } else if(str.equals("data")) {
@@ -52,34 +49,17 @@ public class Main {
                     for (double result : results) {
                         System.out.println(result);
 
-                        System.out.println("데이터를 삭제하시겠습니까?(맨처음 데이터) yes or no");
-                        String str1 = sc.nextLine();
-                        cc.resultremove(str1);
-                        a=0;
                     }
-
-
+                    System.out.println("데이터를 삭제하시겠습니까?(맨처음 데이터) yes or no");
+                    String str1 = sc.nextLine();
+                    cc.resultremove(str1);
+                    a=0;
                 } else {
                     System.out.println("다시 입력해주세요");
                     a =0;
                 }
-
-
-
-
-
-
             }
-
-
-
         } while (ii==1);
-
-
-
-
 //data입력시 계산결과 출력되게
-
-
     }
 }
