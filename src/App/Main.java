@@ -27,7 +27,7 @@ public class Main {
 
             int a=0;
             while (a==0) {
-                System.out.println("계속하시겠습니까? [yes or exit]");
+                System.out.println("계속하시겠습니까? [yes or exit or data]");
                 String str = sc.nextLine();
                 if (str.equals("yes")) {
                     ii = 1;
@@ -47,6 +47,18 @@ public class Main {
 
                     }
                     System.out.println("이상입니다");
+                } else if(str.equals("data")) {
+                    ArrayList<Double> results = cc.getResults();
+                    for (double result : results) {
+                        System.out.println(result);
+
+                        System.out.println("데이터를 삭제하시겠습니까?(맨처음 데이터) yes or no");
+                        String str1 = sc.nextLine();
+                        cc.resultremove(str1);
+                        a=0;
+                    }
+
+
                 } else {
                     System.out.println("다시 입력해주세요");
                     a =0;

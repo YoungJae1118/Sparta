@@ -1,7 +1,7 @@
 package App;
 
 import java.util.ArrayList; // ArrayList를 사용하기 위한 임포트
-import java.util.Scanner;
+
 
 public class Calculator {
 
@@ -45,6 +45,8 @@ public class Calculator {
 
 
         return result;
+
+
     }
 
     public ArrayList<Double> getResults() {
@@ -56,5 +58,22 @@ public class Calculator {
 
 
         }
+
+    public void resultremove(String str1){
+        if(str1.equals("yes")){
+            results.remove(0);
+        }
+
+        else if(str1.equals("no")){
+        }
+        else{
+            System.out.println("다시 입력해주세요");
+        }
+    }
+
+
+
+
+
 
 }
